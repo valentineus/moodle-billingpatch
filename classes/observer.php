@@ -54,6 +54,6 @@ class observer {
     private static function monkey_patch_bigbluebuttonbn($instanceid = 0) {
         global $DB;
         $module = $DB->get_record("bigbluebuttonbn", array("id" => $instanceid));
-        $DB->set_field("event", "timeduration", $module->closingtime);
+        $DB->set_field("event", "timeduration", ($module->closingtime - $module->openingtime), array("modulename" => "bigbluebuttonbn", "instance" => $instanceid));
     }
 }

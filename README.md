@@ -21,7 +21,7 @@ Self-assembly package is as follows:
 
 * Clone the repository:
 ```bash
-git clone https://github.com/valentineus/moodle-billingpatch.git billingpatch
+git clone https://github.com/valentineus/moodle-billingpatch.git moodle-billingpatch
 ```
 
 * Run the build script:

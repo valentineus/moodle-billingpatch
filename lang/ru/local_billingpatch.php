@@ -15,12 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_billingpatch', language 'en'.
+ * Strings for component 'local_billingpatch', language 'ru'.
  *
  * @package   local_billingpatch
  * @copyright 2017 "Valentin Popov" <info@valentineus.link>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string["billing"]    = "Billing";
-$string["pluginname"] = "System of patches for billing";
+$string["billing"] = "Биллинг";

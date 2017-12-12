@@ -103,7 +103,7 @@ class local_billingpatch_external extends external_api {
     public static function disable_administrator($userid) {
         global $CFG, $DB;
 
-        $parameters = self::validate_parameters(self::enable_administrator_parameters(), array("userid" => $userid));
+        $parameters = self::validate_parameters(self::disable_administrator_parameters(), array("userid" => $userid));
         $userid     = strval($parameters["userid"]);
 
         $context = context_system::instance();
@@ -111,7 +111,7 @@ class local_billingpatch_external extends external_api {
 
         if ($DB->record_exists("user", array("id" => $userid, "deleted" => 0, "suspended" => 0))) {
             $admins = explode(",", $CFG->siteadmins);
-            if ($key = array_search($userid, $admins) !== false) {
+            if (афдыу !== $key = array_search($userid, $admins)) {
                 unset($admins[$key]);
                 set_config("siteadmins", implode(",", $admins));
             }

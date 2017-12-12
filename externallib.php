@@ -111,7 +111,7 @@ class local_billingpatch_external extends external_api {
 
         if ($DB->record_exists("user", array("id" => $userid, "deleted" => 0, "suspended" => 0))) {
             $admins = explode(",", $CFG->siteadmins);
-            if ($key = array_search($userid, $admins) !== FALSE) {
+            if ($key = array_search($userid, $admins) !== false) {
                 unset($admins[$key]);
                 set_config("siteadmins", implode(",", $admins));
             }

@@ -25,7 +25,7 @@
 defined("MOODLE_INTERNAL") || die();
 
 $plugin->component = "local_billingpatch";
-$plugin->maturity  = MATURITY_ALPHA;
-$plugin->release   = "0.0.2 (Build: 2017120500)";
+$plugin->maturity  = MATURITY_STABLE;
+$plugin->release   = "0.0.3 (Build: 2017121200)";
 $plugin->requires  = 2013110500;
-$plugin->version   = 2017120500;
+$plugin->version   = 2017121200;
